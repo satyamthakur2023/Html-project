@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Packages</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+  <style>
+    /* Packages Section */
+    .packages-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .packages-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .package-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .package-content {
+      padding: 20px;
+    }
+
+    .package-content h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .package-content p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .package-content .price {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #28a745;
+    }
+
+    .package-content .learn-btn {
+      background: #007bff;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+
+    .package-content .learn-btn:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .social-icons a:hover {
+      color: #1da1f2;
+    }
+
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .banner {
+        font-size: 24px;
+        text-align: center;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">TravelSite</div>
+  <button class="toggle-btn" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+    ☰
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+     <li><a href="#">Destinations</a></li>
+     <li><a href="#">Gallery</a></li>
+    <li><a href="Blog.html">Blog</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+<section class="banner">
+    <div class="banner-content">
+      <h1> Explore Travel & Tour Packages from India to the World 🌍</h1>
+      <a href="#" class="btn">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="packages-section">
+    <h2>Our Travel Packages</h2>
+    <div class="package-grid">
+      <div class="package-card">
+        <img src="images/eiffel-tower-3349075_1920.jpg" alt="Paris">
+        <div class="package-content">
+          <h3>Paris, France</h3>
+          <p>5 Nights | Eiffel Tower, City Tours</p>
+          <div class="price">₹89,999</div>
+          <a href="#" class="learn-btn">Learn More</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/architecture-3349102_1920.jpg" alt="Mumbai">
+        <div class="package-content">
+          <h3>Agra, India</h3>
+          <p>2 Nights | Taj Mahal, Local Markets</p>
+          <div class="price">₹12,999</div>
+          <a href="#" class="learn-btn">Learn More</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/new-york-4526573_1920.jpg" alt="New York">
+        <div class="package-content">
+          <h3>New York, USA</h3>
+          <p>7 Nights | Times Square, Broadway</p>
+          <div class="price">₹1,29,999</div>
+          <a href="#" class="learn-btn">Learn More</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/japan-4680483_1920.jpg" alt="Japan">
+        <div class="package-content">
+          <h3>Bali, Indonesia</h3>
+          <p>4 Nights | Beach Resort, Temple Tour</p>
+          <div class="price">₹49,999</div>
+          <a href="#" class="learn-btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="package.html">Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="Destination.html">Destinations</a>
+      <a href="pricing.html">Pricing</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p style="margin-top: 15px;">&copy; 2025 TravelSeries. All rights reserved or Designed by Satyam thakur</p>
+  </footer>
+
+</body>
+</html>

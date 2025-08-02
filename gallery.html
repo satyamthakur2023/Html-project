@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.gallery {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}
+
+footer {
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">TravelSite</div>
+  <button class="toggle-btn" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+    ☰
+  </button>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+     <li><a href="Destination.html">Destinations</a></li>
+     <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="Blog.html">Blog</a></li>
+    <li><a href="package.html">Packages</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+  <header>
+    <h1>Our Travel Gallery</h1>
+    <p>Explore destinations across the world</p>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/eiffel-tower-3349075_1920.jpg" alt="Paris">
+        <div class="overlay">Paris, France</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/architecture-3349102_1920.jpg" alt="Mumbai">
+        <div class="overlay">Mumbai, India</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/dubai-4902764_1920.jpg" alt="Dubai">
+        <div class="overlay">Dubai, UAE</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/tower-2223305_1920.jpg" alt="Tokyo">
+        <div class="overlay">Tokyo, Japan</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/caucasus-5299607_1920.jpg" alt="London">
+        <div class="overlay">London, UK</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/new-york-4526573_1920.jpg" alt="New York">
+        <div class="overlay">New York, USA</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TravelSeries. All rights reserved. | Designed by Satyam Thakur</p>
+  </footer>
+
+</body>
+</html>
