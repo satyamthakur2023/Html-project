@@ -84,9 +84,3 @@ This project is open for educational and personal use. For commercial usage, ple
 🧳 **Triporo** – *Explore. Experience. Evolve.*
 
 ```
-
----
-
-Would you like this converted into a downloadable `.md` file or pushed to GitHub directly?  
-I can also help set up your GitHub repo’s **README visuals** like banners or badges if needed.
-```
